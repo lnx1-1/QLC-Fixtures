@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author>lnx</Author>
+ </Creator>
+ <Manufacturer>Cameo</Manufacturer>
+ <Model>Sunbeam</Model>
+ <Type>Flower</Type>
+ <Channel Name="Color Selection" Default="1">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="7">Red</Capability>
+  <Capability Min="8" Max="15">Green</Capability>
+  <Capability Min="16" Max="23">Blue</Capability>
+  <Capability Min="24" Max="31">White</Capability>
+  <Capability Min="32" Max="39">Amber</Capability>
+  <Capability Min="40" Max="47">Red / Green</Capability>
+  <Capability Min="48" Max="55">Red / Blue</Capability>
+  <Capability Min="56" Max="63">Red / White</Capability>
+  <Capability Min="64" Max="71">Red / Amber</Capability>
+  <Capability Min="72" Max="79">Green / Blue</Capability>
+  <Capability Min="80" Max="87">Green / White</Capability>
+  <Capability Min="88" Max="95">Green / Amber</Capability>
+  <Capability Min="96" Max="103">Blue / White</Capability>
+  <Capability Min="104" Max="111">Blue / Amber</Capability>
+  <Capability Min="112" Max="119">Red / Green / Blue</Capability>
+  <Capability Min="120" Max="127">Red / Green / White</Capability>
+  <Capability Min="128" Max="135">Red / Green / Amber</Capability>
+  <Capability Min="136" Max="143">Red / Blue / White</Capability>
+  <Capability Min="144" Max="151">Red / Blue / Amber</Capability>
+  <Capability Min="152" Max="159">Red / White / Amber</Capability>
+  <Capability Min="160" Max="167">Blue / White / Amber</Capability>
+  <Capability Min="168" Max="175">Green / Blue / White</Capability>
+  <Capability Min="176" Max="183">Green / Blue / Amber</Capability>
+  <Capability Min="184" Max="191">Green / White / Amber</Capability>
+  <Capability Min="192" Max="199">Red / Green / Blue / White</Capability>
+  <Capability Min="200" Max="207">Red/ Blue/ White/ Amber</Capability>
+  <Capability Min="208" Max="215">Red/ Green/ White/ Amber</Capability>
+  <Capability Min="216" Max="223">Red/ Green/ Blue/ Amber</Capability>
+  <Capability Min="224" Max="231">Green/ Blue/ White/ Amber</Capability>
+  <Capability Min="232" Max="239">Red/ Green/ White/ Amber</Capability>
+  <Capability Min="240" Max="255">Automatic Color Change</Capability>
+ </Channel>
+ <Channel Name="Mirror Rotation" Default="2">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="9">No Movement</Capability>
+  <Capability Min="10" Max="255">Slow to Fast</Capability>
+ </Channel>
+ <Channel Name="Strobo">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="1">No Strobe</Capability>
+  <Capability Min="2" Max="255">slow to Fast</Capability>
+ </Channel>
+ <Channel Name="Dimmer" Default="4">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">0 % to 100%</Capability>
+ </Channel>
+ <Channel Name="Color Change Speed" Default="5">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">slow to Fast</Capability>
+ </Channel>
+ <Mode Name="5-Channel">
+  <Channel Number="0">Color Selection</Channel>
+  <Channel Number="1">Mirror Rotation</Channel>
+  <Channel Number="2">Strobo</Channel>
+  <Channel Number="3">Dimmer</Channel>
+  <Channel Number="4">Color Change Speed</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

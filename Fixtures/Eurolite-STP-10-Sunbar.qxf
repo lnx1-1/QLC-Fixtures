@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author>lnx</Author>
+ </Creator>
+ <Manufacturer>Eurolite</Manufacturer>
+ <Model>STP-10 Sunbar</Model>
+ <Type>LED Bar (Beams)</Type>
+ <Channel Name="Dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="0">No Strobe</Capability>
+  <Capability Min="1" Max="255">Strobe slow to Fast</Capability>
+ </Channel>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="White" Preset="IntensityWhite"/>
+ <Channel Name="WarmWhite LEDs Programm">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="0">no function</Capability>
+  <Capability Min="1" Max="17">Programm</Capability>
+  <Capability Min="18" Max="34">Programm</Capability>
+  <Capability Min="35" Max="51">Programm</Capability>
+  <Capability Min="52" Max="68">Programm</Capability>
+  <Capability Min="69" Max="85">Programm</Capability>
+  <Capability Min="86" Max="102">Programm</Capability>
+  <Capability Min="103" Max="119">Programm</Capability>
+  <Capability Min="120" Max="136">Programm</Capability>
+  <Capability Min="137" Max="153">Programm</Capability>
+  <Capability Min="154" Max="170">Programm</Capability>
+  <Capability Min="171" Max="187">Programm</Capability>
+  <Capability Min="188" Max="204">Programm</Capability>
+  <Capability Min="205" Max="221">Programm</Capability>
+  <Capability Min="222" Max="238">Programm</Capability>
+  <Capability Min="239" Max="255">Auto</Capability>
+ </Channel>
+ <Channel Name="RGB Programm">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="0">no Function</Capability>
+  <Capability Min="1" Max="17">Funktion 1</Capability>
+  <Capability Min="18" Max="34">Funktion 2</Capability>
+  <Capability Min="35" Max="51">Funktion 3</Capability>
+  <Capability Min="52" Max="68">Funktion 4</Capability>
+  <Capability Min="69" Max="85">Funktion 5</Capability>
+  <Capability Min="86" Max="102">Funktion 6</Capability>
+  <Capability Min="103" Max="119">Funktion 7</Capability>
+  <Capability Min="120" Max="136">Funktion 8</Capability>
+  <Capability Min="137" Max="153">Funktion 9</Capability>
+  <Capability Min="154" Max="170">Funktion 10</Capability>
+  <Capability Min="171" Max="187">Funktion 11</Capability>
+  <Capability Min="188" Max="204">Funktion 12</Capability>
+  <Capability Min="205" Max="221">Funktion 13</Capability>
+  <Capability Min="222" Max="238">Funktion 14</Capability>
+  <Capability Min="239" Max="255">Auto</Capability>
+ </Channel>
+ <Channel Name="Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">slow to Fast</Capability>
+ </Channel>
+ <Channel Name="Color for RGB LEDs">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="36">RED</Capability>
+  <Capability Min="37" Max="73">Green</Capability>
+  <Capability Min="74" Max="110">Blue</Capability>
+  <Capability Min="111" Max="147">Yellow</Capability>
+  <Capability Min="148" Max="184">Cyan</Capability>
+  <Capability Min="185" Max="221">Pink</Capability>
+  <Capability Min="222" Max="255">White</Capability>
+ </Channel>
+ <Channel Name="Music Control">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Music Control</Capability>
+ </Channel>
+ <Mode Name="11 Channel">
+  <Channel Number="0">Dimmer</Channel>
+  <Channel Number="1">Strobe</Channel>
+  <Channel Number="2">Red</Channel>
+  <Channel Number="3">Green</Channel>
+  <Channel Number="4">Blue</Channel>
+  <Channel Number="5">White</Channel>
+  <Channel Number="6">WarmWhite LEDs Programm</Channel>
+  <Channel Number="7">RGB Programm</Channel>
+  <Channel Number="8">Speed</Channel>
+  <Channel Number="9" ActsOn="7">Color for RGB LEDs</Channel>
+  <Channel Number="10">Music Control</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
